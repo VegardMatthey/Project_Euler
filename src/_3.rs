@@ -27,29 +27,3 @@ fn is_prime(num: u64) -> bool {
     }
     true
 }
-
-#[cfg(test)]
-#[test]
-fn zero() {
-    assert_eq!(is_prime(0), false);
-}
-
-#[test]
-fn two() {
-    assert_eq!(is_prime(2), true);
-}
-
-#[test]
-fn nine() {
-    assert_eq!(is_prime(9), false);
-}
-
-#[test]
-fn eleven() {
-    assert_eq!(is_prime(11), true);
-}
-
-#[test]
-fn some_number() {
-    assert_eq!(is_prime(71), true);
-}
